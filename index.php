@@ -1,3 +1,13 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
 
 include_once __DIR__ . '/classi/generi.php';
@@ -28,7 +38,7 @@ $prodotti = [
   new dvd('starwars', 'georgelucas', 19.20, $generi['fantasy'], true, 'https://immagine-copertina.com', 'blueray', 'oscar'),
 ];
 
-var_dump( $prodotti );
+print_r(var_dump( $prodotti ));
 
 foreach( $prodotti as $elem ){
   echo get_class($elem);
@@ -42,8 +52,9 @@ try{
         echo "errore: " . $e->getMessage();
     }
 
-    var_dump($cd)
-
+   /*  var_dump($cd) */
 
 ?>
+</body>
+</html>
 
